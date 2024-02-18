@@ -1,0 +1,64 @@
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+	background: linear-gradient(-45deg, #154c8a, #5f3300);
+	background-size: 600% 600%;
+	animation: gradient 10s ease 1 forwards;
+}
+
+.logo-container {
+    min-width: 250px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logo {
+    transition: transform 1s ease;
+    max-width: 500px;
+    width: 60%;
+    border-radius: 100%;
+    mix-blend-mode:lighten;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.pill-button {
+    background-color: white;
+    color: black;
+    mix-blend-mode: screen;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.icon {
+    color: white;
+}
+
+
+/* animations */
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 50%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
